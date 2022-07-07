@@ -1,7 +1,7 @@
 import { Router } from "express"
+import battle from "../controllers/battleController.js";
 const battleRouter = Router()
-import battleUsers from '../controllers/battleController.js'
 
-battleRouter.post('/battle', battleUsers)
+battleRouter.post('/battle', battle)
 
 export default battleRouter;
